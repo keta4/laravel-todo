@@ -17,4 +17,17 @@ class TasksController extends Controller
         $task = Task::find($id);
         return view('tasks.show', compact('task'));
     }
+
+    public function add(){
+        return view('tasks.add');
+    }
+
+    public function store(Request $request){
+        $result = Task::create([
+            'name' => $request->name,
+            'content' => $request->content
+        ]);
+        
+        return redirect()->route('tasks.index');
+    }
 }
