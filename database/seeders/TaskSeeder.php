@@ -18,18 +18,24 @@ class TaskSeeder extends Seeder
         DB::table('tasks')->insert([
             [
                 'id' => 1,
-                'name' => 'task1',
-                'content' => 'content1'
+                'name' => 'パンを買う',
+                'content' => 'ふわふわした食感のパンが新しくでた！',
+                'created_at' => '2022-02-11 12:11:11',
+                'updated_at' => '2022-02-13 14:22:33'
             ],
             [
                 'id' => 2,
-                'name' => 'task2',
-                'content' => 'content2'
+                'name' => 'Laravelを勉強',
+                'content' => 'Laravel9が出たので、3時間勉強する',
+                'created_at' => '2022-02-11 12:11:11',
+                'updated_at' => '2022-02-13 14:22:33'
             ],
             [
                 'id' => 3,
-                'name' => 'task3',
-                'content' => 'content3'
+                'name' => 'ランニング',
+                'content' => '新しいコースで10kmを目標に走る',
+                'created_at' => '2022-02-11 12:11:11',
+                'updated_at' => '2022-02-13 14:22:33'
             ]
         ]);
     }
