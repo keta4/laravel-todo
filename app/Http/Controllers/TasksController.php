@@ -10,7 +10,7 @@ class TasksController extends Controller
 {
     //
     public function index(){
-        $tasks = Task::get();
+        $tasks = Task::orderBy('updated_at', 'desc')->get();
         return view('tasks.index', compact('tasks'));
     }
 
