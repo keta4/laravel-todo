@@ -56,7 +56,7 @@
             <a href="{{ route('tasks.index') }}">戻る</a>
         </div>
         <div class="link__edit">
-            <a href="">編集</a>
+            <a href="{{ route('tasks.edit', ['id' => $task->id]) }}">編集</a>
         </div>
         <div class="link__delete">
             <a href="">削除</a>
