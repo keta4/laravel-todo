@@ -50,8 +50,8 @@
             <tr>
                 <td class="td1">{{ $task->name }}</td>
                 <td class="td2">
-                    <a href="{{ route('tasks.show', ['id' => $task->id]) }}" class="btn">詳細</a>
-                    <a href="{{ route('tasks.edit', ['id' => $task->id]) }}" class="btn">編集</a>
+                    <a href="{{ route('tasks.show', ['id' => $task->id]) }}" class="btn btn-primary">詳細</a>
+                    <a href="{{ route('tasks.edit', ['id' => $task->id]) }}" class="btn btn-primary">編集</a>
 
                     <form action="{{ route('tasks.delete', ['id' => $task->id]) }}" method="POST">
                         @csrf
