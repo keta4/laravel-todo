@@ -31,8 +31,8 @@
 </style>
 
 <head>
-<link href="{{ asset('css/app.css') }}" rel="stylesheet">
-<link href="{{ asset('js/app.css') }}" rel="stylesheet">
+<!-- <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+<link href="{{ asset('js/app.css') }}" rel="stylesheet"> -->
 </head>
 
 <h1>タスク一覧画面</h1>
