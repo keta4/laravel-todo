@@ -47,7 +47,7 @@ services:
                 - '-p${DB_PASSWORD}'
             retries: 3
             timeout: 5s
-    //ここから追加
+    # ここから追加
     phpmyadmin:
         image: phpmyadmin/phpmyadmin
         links:
@@ -60,7 +60,7 @@ services:
             PMA_HOST: mysql
         networks:
             - sail
-     //ここまで追加
+     # ここまで追加
 networks:
     sail:
         driver: bridge
